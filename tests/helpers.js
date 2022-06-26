@@ -13,5 +13,5 @@ export function assert(func, expectedResult, args = '[]') {
     }
 
     const print = isPassed ? console.info : console.error;
-    print(`Function ${functionName} | Arguments ${args} | ${isPassed ? "OK" : "ERR"}`);
+    print(`${isPassed ? "OK" : "ERR"} | Function ${functionName} | Arguments ${args}`);
 }
